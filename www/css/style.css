@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#messages {
+    width: 95%;
+    max-width: 400px;
+    height: 350px;
+    overflow-y: scroll;
+    border: 1px solid grey;
+    box-shadow: 0px 0px 20px gray inset;
+    margin-bottom: 20px; /* Agregamos margen inferior para separar del formulario */
+}
+
+.message {
+    margin: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    background: white;
+}
+
+form {
+    width: 95%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input,
+textarea {
+    margin-bottom: 10px;
+}
+
+/* Añadimos reglas para hacer que el formulario sea más responsive */
+@media only screen and (max-width: 600px) {
+    #messages {
+        width: 100%;
+        max-width: none;
+    }
+
+    form {
+        width: 100%;
+        max-width: none;
+    }
+}
